@@ -23,7 +23,8 @@ class Solution {
         String pal = Integer.toString(x);
         StringBuilder indrome = new StringBuilder();
 
-        for(int y = (pal.length() - 1); y >= 0; y--) {
+        int y = pal.length() - 1;
+        for(; y >= 0; y--) {
             indrome.append(pal.charAt(y));
         }
 
