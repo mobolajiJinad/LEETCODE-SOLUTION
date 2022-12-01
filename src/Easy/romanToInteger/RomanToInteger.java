@@ -36,7 +36,7 @@ class Solution {
     }
 }
 
-public class romanToInteger {
+public class RomanToInteger {
     public static void main(String[] args) {
         Solution solution = new Solution();
 

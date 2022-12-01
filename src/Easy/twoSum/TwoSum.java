@@ -28,7 +28,7 @@ class Solution {
     }
 }
 
-public class twoSum {
+public class TwoSum {
     public static void main(String[] args) {
         Solution solution = new Solution();
 

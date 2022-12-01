@@ -4,7 +4,7 @@ package Easy.palindromeNumber;
 //
 //Given an integer x, return true if x is a palindrome, and false otherwise.
 
-//class palindromeNumber.Solution {
+//class PalindromeNumber.Solution {
 //    public boolean isPalindrome(int x) {
 //        String pal = Integer.toString(x);
 //        String indrome = "";
@@ -32,7 +32,7 @@ class Solution {
     }
 }
 
-public class palindromeNumber {
+public class PalindromeNumber {
     public static void main(String[] args) {
         Solution solution = new Solution();
 
