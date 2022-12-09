@@ -17,13 +17,10 @@ class Solution {
 
         if((s.length() % 2) != 0) p = false;
         else {
-            for(int x = 0; x < s.length() - 1; x++) {
-                if (hash.get(s.charAt(x)) == s.charAt(x + 1)) {
-                    p = true;
-                    x++;
-                } else {
-                    p = false;
-                }
+            for(int x = 0; x < s.length() - 1; x += 2) {
+                p = ((hash.get(s.charAt(x)) != null) && hash.get(s.charAt(x)).equals(s.charAt(x + 1)));
+
+                if(!p) break;
             }
         }
         return p;
@@ -34,6 +31,8 @@ public class ValidParentheses {
     public static void main(String[] args) {
         Solution solution = new Solution();
 
-        System.out.println(solution.isValid("(}"));
+        //test cases
+        System.out.println(solution.isValid("{([)]}"));
+        System.out.println(solution.isValid("{}[]"));
     }
 }
