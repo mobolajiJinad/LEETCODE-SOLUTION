@@ -51,6 +51,7 @@ public class FindPeakElement {
   public static void main(String[] args) {
     Solution solution = new Solution();
 
+    // test cases
     System.out.println(solution.findPeakElement(new int[] { 1, 2, 3, 1 }));
     System.out.println(solution.findPeakElement(new int[] { 1, 2, 1, 3, 5, 6, 4 }));
   }
